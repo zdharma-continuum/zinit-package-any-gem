@@ -25,7 +25,7 @@ forwarder scripts) created automatically by
 The Ruby Gem(s) to install are specified by the `param'GEM → {gem1}; GEM2 →
 {gem2}; …'` ice. The name of the plugin will be `{gem1}`, unless `id-as''` ice
 will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS →
-my-plugin'; GEM → …`).
+my-plugin; GEM → …'`).
 
 A few example invocations:
 

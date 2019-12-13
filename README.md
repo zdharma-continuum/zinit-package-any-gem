@@ -37,7 +37,7 @@ zplugin pack param='GEM → chef' for any-gem
 zplugin id-as=ruby-on-rails pack param='GEM → remark-man; GEM2 → remark-cli' for any-gem
 
 # Install `jekyll' Gem and call the plugin: jkl
-zplugin pack param='IDAS → jkl; GEM → pen' for any-gem
+zplugin pack param='IDAS → jkl; GEM → jekyll' for any-gem
 ```
 
 ## Default Profile

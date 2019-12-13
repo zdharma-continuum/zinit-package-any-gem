@@ -34,7 +34,7 @@ A few example invocations:
 zplugin pack param='GEM → chef' for any-gem
 
 # Install `rails' Gem and call the plugin: ruby-on-rails
-zplugin id-as=ruby-on-rails pack param='GEM → remark-man; GEM2 → remark-cli' for any-gem
+zplugin id-as=ruby-on-rails pack param='GEM → rails' for any-gem
 
 # Install `jekyll' Gem and call the plugin: jkl
 zplugin pack param='IDAS → jkl; GEM → jekyll' for any-gem

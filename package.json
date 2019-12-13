@@ -49,8 +49,8 @@
                 "git": "",
                 "lucid": "",
                 "as": "null",
-                "id-as": "${${:-%IDAS%}:-%MOD%}",
-                "gem": "%MOD%;%MOD2%;%MOD3%;%MOD4%;%MOD5%;%MOD6%;%MOD7%;%OTHER%",
+                "id-as": "${${:-%IDAS%}:-%GEM%}",
+                "gem": "%GEM%;%GEM2%;%GEM3%;%GEM4%;%GEM5%;%GEM6%;%GEM7%;%OTHER%",
                 "sbin": "g:bin/*",
                 "atpull": "%atclone"
             }

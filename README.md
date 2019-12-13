@@ -22,22 +22,22 @@ locally inside the plugin directory, exposing their binaries via *shims* (i.e.:
 forwarder scripts) created automatically by
 [Bin-Gem-Node](https://github.com/zplugin/z-a-bin-gem-gem) annex.
 
-The Ruby Gem(s) to install are specified by the `param'MOD → {gem1}; MOD2 →
+The Ruby Gem(s) to install are specified by the `param'GEM → {gem1}; GEM2 →
 {gem2}; …'` ice. The name of the plugin will be `{gem1}`, unless `id-as''` ice
 will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS →
-my-plugin'; MOD → …`).
+my-plugin'; GEM → …`).
 
 A few example invocations:
 
 ```zsh
 # Install `chef' Gem and call the plugin with the same name
-zplugin pack param='MOD → chef' for any-gem
+zplugin pack param='GEM → chef' for any-gem
 
 # Install `rails' Gem and call the plugin: ruby-on-rails
-zplugin id-as=ruby-on-rails pack param='MOD → remark-man; MOD2 → remark-cli' for any-gem
+zplugin id-as=ruby-on-rails pack param='GEM → remark-man; GEM2 → remark-cli' for any-gem
 
 # Install `jekyll' Gem and call the plugin: jkl
-zplugin pack param='IDAS → jkl; MOD → pen' for any-gem
+zplugin pack param='IDAS → jkl; GEM → pen' for any-gem
 ```
 
 ## Default Profile
@@ -48,8 +48,8 @@ which are substituted with the `value` from the ice `param'PARAM → value; …'
 The Zplugin command executed will be equivalent to:
 
 ```zsh
-zplugin lucid id-as="${${:-%IDAS%}:-%MOD%}" as=null \
-    gem="%MOD%;%MOD2%;%MOD3%;%MOD4%;%MOD5%;%MOD6%;%MOD7%;%OTHER%" \
+zplugin lucid id-as="${${:-%IDAS%}:-%GEM%}" as=null \
+    gem="%GEM%;%GEM2%;%GEM3%;%GEM4%;%GEM5%;%GEM6%;%GEM7%;%OTHER%" \
     sbin="n:bin/*" for \
         zdharma/null
 ```

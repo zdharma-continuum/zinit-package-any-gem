@@ -52,7 +52,8 @@
                 "id-as": "${${:-%IDAS%}:-%GEM%}",
                 "gem": "%GEM%;%GEM2%;%GEM3%;%GEM4%;%GEM5%;%GEM6%;%GEM7%;%OTHER%",
                 "sbin": "g:bin/*",
-                "atpull": "%atclone"
+                "atpull": "%atclone",
+                "nocompile": ""
             }
         }
     }
